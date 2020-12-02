@@ -7,10 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarContents">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Strona domowa</a>
+                <a class="nav-link" href="{{ route('pages.index') }}">Strona domowa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Moje projekty</a>
+                <a class="nav-link" href="{{ route('pages.list') }}">Moje projekty</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('pages.about') }}">O mnie</a>
             </li>
         </ul>
     </div>
