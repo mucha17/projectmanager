@@ -7,24 +7,16 @@
         </div>
     </div>
     <hr>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="pm-date"><span>Data rozp. proj. - Data zak. proj.</span></div>
-            <h1 class="pm-subtitle">Nazwa projektu</h1>
-            <div class="pm-author"><span>Autor</span></div>
-            <p class="pm-typography">Krótki opis projektu</p>
-            <div class="pm-find-out-more"><a href="{{ route('pages.details', ['id' => 1]) }}">Więcej</a></div>
+    @foreach($projects as $project)
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="pm-date"><span>{{ $project->start_date ? $project->start_date : "Nie podano" }} - {{ $project->finish_date ? $project->finish_date : "Nie podano" }}</span></div>
+                <h1 class="pm-subtitle">{{ $project->name }}</h1>
+                <div class="pm-author"><span>{{ $project->author }}</span></div>
+                <p class="pm-typography">{{ $project->short_description }}</p>
+                <div class="pm-find-out-more"><a href="{{ route('pages.details', ['id' => $project->id]) }}">Więcej</a></div>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="pm-date"><span>Data rozp. proj. - Data zak. proj.</span></div>
-            <h1 class="pm-subtitle">Nazwa projektu</h1>
-            <div class="pm-author"><span>Autor</span></div>
-            <p class="pm-typography">Krótki opis projektu</p>
-            <div class="pm-find-out-more"><a href="{{ route('pages.details', ['id' => 2]) }}">Więcej</a></div>
-        </div>
-    </div>
-    <hr>
+        <hr>
+    @endforeach
 @endsection
