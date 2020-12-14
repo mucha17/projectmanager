@@ -2,8 +2,11 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-11 text-center">
             <h1 class="pm-title">Lista projektów</h1>
+        </div>
+        <div class="col-1">
+            <a class="pm-manage-create" href="{{ route('manage.create') }}">Dodaj</a>
         </div>
     </div>
     <hr>

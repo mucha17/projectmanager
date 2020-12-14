@@ -83,7 +83,7 @@
     border-top: 1px solid #111;
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -112,6 +112,101 @@
     cursor: pointer;
 }
 .pm-find-out-more a:hover {
+    background: #990000;
+    text-decoration: none;
+}
+.pm-manage {
+    color: #111;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 38px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+.pm-manage:before {
+    border-top: 1px solid #111;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.pm-manage a:first-of-type {
+    -moz-border-radius: 50%;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
+    background: #111;
+    border-radius: 50%;
+    border: 10px solid #fdfdfd;
+    color: #fff;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 80px;
+    line-height: 63px;
+    margin: -40px 0 0 -40px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    cursor: pointer;
+}
+.pm-manage a {
+    -moz-border-radius: 50%;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
+    background: #111;
+    border-radius: 50%;
+    border: 10px solid #fdfdfd;
+    color: #fff;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 80px;
+    line-height: 63px;
+    margin: -40px 0 0 -40px;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    cursor: pointer;
+}
+.pm-manage a:hover {
+    background: #990000;
+    text-decoration: none;
+}
+.pm-manage-create {
+    margin-top:10px;
+    -moz-border-radius: 50%;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
+    background: #111;
+    border-radius: 50%;
+    border: 10px solid #fdfdfd;
+    color: #fff;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 80px;
+    line-height: 63px;
+    bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+    cursor: pointer;
+}
+.pm-manage-create:hover {
     background: #990000;
     text-decoration: none;
 }
